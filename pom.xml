@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.codelibs.fess</groupId>
+	<artifactId>fess-parent</artifactId>
+	<version>13.13.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Fess</name>
+	<description>Fess is Full tExt Search System.</description>
+	<url>https://fess.codelibs.org/</url>
+	<inceptionYear>2009</inceptionYear>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<organization>
+		<name>CodeLibs</name>
+		<url>https://fess.codelibs.org/</url>
+	</organization>
+	<scm>
+		<connection>scm:git:git@github.com:codelibs/fess-parent.git</connection>
+		<developerConnection>scm:git:git@github.com:codelibs/fess-parent.git</developerConnection>
+		<url>https://github.com/codelibs/fess</url>
+	</scm>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>9</version>
+	</parent>
+	<properties>
+		<!-- Main Framework -->
+		<dbflute.version>1.2.4</dbflute.version>
+		<lastaflute.version>1.2.0</lastaflute.version>
+		<lasta.di.version>0.8.3</lasta.di.version>
+		<lasta.taglib.version>0.7.3</lasta.taglib.version>
+		<lasta.job.version>0.5.4</lasta.job.version>
+		<mailflute.version>0.6.4</mailflute.version>
+
+		<!-- Crawler -->
+		<crawler.version>3.13.0-SNAPSHOT</crawler.version>
+
+		<!-- Suggest -->
+		<suggest.version>7.13.0-SNAPSHOT</suggest.version>
+
+		<!-- Fesen -->
+		<fesen.version>0.13.0</fesen.version>
+		<fesen.httpclient.version>0.13.0</fesen.httpclient.version>
+		<fesen.runner.version>0.13.0</fesen.runner.version>
+
+		<!-- Tomcat -->
+		<tomcat.version>9.0.44</tomcat.version>
+		<tomcat.boot.version>0.7.7</tomcat.boot.version>
+
+		<!-- Partner Library -->
+		<adal4j.version>1.6.6</adal4j.version>
+		<asm.version>9.1</asm.version>
+		<commons.codec.version>1.15</commons.codec.version>
+		<commons.fileupload.version>1.4</commons.fileupload.version>
+		<commons.io.version>2.8.0</commons.io.version>
+		<commons.lang3.version>3.12.0</commons.lang3.version>
+		<corelib.version>0.5.4</corelib.version>
+		<curl4j.version>1.2.4</curl4j.version>
+		<google.http.client.version>1.38.1</google.http.client.version>
+		<google.oauth.client.version>1.31.4</google.oauth.client.version>
+		<groovy.version>3.0.7</groovy.version>
+		<guava.version>30.1.1-jre</guava.version>
+		<handlebars.version>4.2.0</handlebars.version>
+		<icu4j.version>68.2</icu4j.version>
+		<jackson.version>2.12.2</jackson.version>
+		<jakarta.activation.api>1.2.2</jakarta.activation.api>
+		<java.saml.version>2.6.0</java.saml.version>
+		<javax.transaction.api.version>1.3</javax.transaction.api.version>
+		<jersey.common.version>3.0.2</jersey.common.version>
+		<log4j.version>2.14.1</log4j.version>
+		<minio.version>8.1.0</minio.version>
+		<okhttp.version>4.9.1</okhttp.version>
+		<slf4j.version>1.7.30</slf4j.version>
+		<tika.version>1.26</tika.version>
+
+		<!-- Testing -->
+		<utflute.version>0.9.1</utflute.version>
+		<junit.version>4.13.2</junit.version>
+		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+		<junit.vintage.version>5.7.0</junit.vintage.version>
+	</properties>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-antrun-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>3.3.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>3.1.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>2.22.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>3.2.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jxr-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.2.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>3.2.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.3.1</version>
+				</plugin>
+				<plugin>
+					<groupId>com.mycila</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>4.0</version>
+				</plugin>
+				<plugin>
+					<groupId>net.revelc.code.formatter</groupId>
+					<artifactId>formatter-maven-plugin</artifactId>
+					<version>2.14.0</version>
+				</plugin>
+				<plugin>
+					<groupId>net.alchim31.maven</groupId>
+					<artifactId>yuicompressor-maven-plugin</artifactId>
+					<version>1.5.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.dbflute</groupId>
+					<artifactId>dbflute-maven-plugin</artifactId>
+					<version>1.1.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.vafer</groupId>
+					<artifactId>jdeb</artifactId>
+					<version>1.8</version>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>rpm-maven-plugin</artifactId>
+					<version>2.2.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>codelibs.org</id>
+			<name>CodeLibs Repository</name>
+			<url>https://maven.codelibs.org/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>oss.sonatype.org</id>
+			<name>oss.sonatype.org</name>
+			<url>https://oss.sonatype.org/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<repositories>
+		<repository>
+			<id>codelibs.org</id>
+			<name>CodeLibs Repository</name>
+			<url>https://maven.codelibs.org/</url>
+		</repository>
+		<repository>
+			<id>oss.sonatype.org</id>
+			<name>oss.sonatype.org</name>
+			<url>https://oss.sonatype.org/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
