@@ -31,7 +31,7 @@
 		<version>9</version>
 	</parent>
 	<properties>
-		<fess.version>13.13.0</fess.version>
+		<fess.version>13.13.1</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.4</dbflute.version>
@@ -42,7 +42,7 @@
 		<mailflute.version>0.6.4</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>3.13.0</crawler.version>
+		<crawler.version>3.13.1</crawler.version>
 
 		<!-- Suggest -->
 		<suggest.version>7.13.0</suggest.version>
