@@ -77,7 +77,8 @@
 		<icu4j.version>69.1</icu4j.version>
 		<jackson.version>2.12.4</jackson.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
-		<jakarta.activation.api>1.2.2</jakarta.activation.api>
+		<jakarta.activation.api.version>1.2.2</jakarta.activation.api.version>
+		<jakarta.activation.version>2.0.1</jakarta.activation.version>
 		<java.saml.version>2.7.0</java.saml.version>
 		<javax.annotation.api.version>1.3.2</javax.annotation.api.version>
 		<javax.mail.version>1.6.2</javax.mail.version>
