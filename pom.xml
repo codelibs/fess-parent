@@ -34,7 +34,7 @@
 		<fess.version>13.14.0-SNAPSHOT</fess.version>
 
 		<!-- Main Framework -->
-		<dbflute.version>1.2.4</dbflute.version>
+		<dbflute.version>1.2.5</dbflute.version>
 		<lastaflute.version>1.2.0</lastaflute.version>
 		<lasta.di.version>0.8.3</lasta.di.version>
 		<lasta.taglib.version>0.7.3</lasta.taglib.version>
