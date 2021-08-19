@@ -108,7 +108,7 @@
 		<tika.version>1.27</tika.version>
 
 		<!-- Testing -->
-		<utflute.version>0.9.2</utflute.version>
+		<utflute.version>0.9.3</utflute.version>
 		<junit.version>4.13.2</junit.version>
 		<junit.jupiter.version>5.7.2</junit.jupiter.version>
 		<junit.vintage.version>5.7.2</junit.vintage.version>
