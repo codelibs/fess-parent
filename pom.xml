@@ -48,9 +48,9 @@
 		<suggest.version>7.14.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.version>0.14.0-SNAPSHOT</fesen.version>
-		<fesen.httpclient.version>0.14.0-SNAPSHOT</fesen.httpclient.version>
-		<fesen.runner.version>0.14.0-SNAPSHOT</fesen.runner.version>
+		<fesen.version>0.14.0</fesen.version>
+		<fesen.httpclient.version>0.14.0</fesen.httpclient.version>
+		<fesen.runner.version>0.14.0</fesen.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.52</tomcat.version>
@@ -85,7 +85,7 @@
 		<javax.servlet.api.version>4.0.1</javax.servlet.api.version>
 		<javax.transaction.api.version>1.3</javax.transaction.api.version>
 		<jbig2.imageio.version>3.0.3</jbig2.imageio.version>
-		<jcifs.version>2.1.27-SNAPSHOT</jcifs.version>
+		<jcifs.version>2.1.27</jcifs.version>
 		<jersey.common.version>3.0.2</jersey.common.version>
 		<jhighlight.version>1.0.3</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
