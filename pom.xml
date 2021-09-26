@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.codelibs.fess</groupId>
 	<artifactId>fess-parent</artifactId>
-	<version>13.14.1-SNAPSHOT</version>
+	<version>13.15.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Fess</name>
 	<description>Fess is Full tExt Search System.</description>
@@ -31,7 +31,7 @@
 		<version>9</version>
 	</parent>
 	<properties>
-		<fess.version>13.14.0</fess.version>
+		<fess.version>13.15.0-SNAPSHOT</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.5</dbflute.version>
@@ -42,15 +42,15 @@
 		<mailflute.version>0.6.4</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>3.14.0</crawler.version>
+		<crawler.version>3.15.0-SNAPSHOT</crawler.version>
 
 		<!-- Suggest -->
-		<suggest.version>7.14.0</suggest.version>
+		<suggest.version>7.15.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.version>0.14.0</fesen.version>
-		<fesen.httpclient.version>0.14.0</fesen.httpclient.version>
-		<fesen.runner.version>0.14.0</fesen.runner.version>
+		<fesen.version>0.15.0-SNAPSHOT</fesen.version>
+		<fesen.httpclient.version>0.15.0-SNAPSHOT</fesen.httpclient.version>
+		<fesen.runner.version>0.15.0-SNAPSHOT</fesen.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.52</tomcat.version>
