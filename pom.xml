@@ -85,7 +85,7 @@
 		<javax.servlet.api.version>4.0.1</javax.servlet.api.version>
 		<javax.transaction.api.version>1.3</javax.transaction.api.version>
 		<jbig2.imageio.version>3.0.3</jbig2.imageio.version>
-		<jcifs.version>2.1.27</jcifs.version>
+		<jcifs.version>2.1.28-SNAPSHOT</jcifs.version>
 		<jersey.common.version>3.0.3</jersey.common.version>
 		<jhighlight.version>1.0.3</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
