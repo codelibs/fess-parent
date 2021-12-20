@@ -42,15 +42,15 @@
 		<mailflute.version>0.6.4</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>3.16.0-SNAPSHOT</crawler.version>
+		<crawler.version>3.16.0</crawler.version>
 
 		<!-- Suggest -->
-		<suggest.version>7.16.0-SNAPSHOT</suggest.version>
+		<suggest.version>7.16.0</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.version>0.16.0-SNAPSHOT</fesen.version>
-		<fesen.httpclient.version>0.16.0-SNAPSHOT</fesen.httpclient.version>
-		<fesen.runner.version>0.16.0-SNAPSHOT</fesen.runner.version>
+		<fesen.version>0.16.0</fesen.version>
+		<fesen.httpclient.version>0.16.0</fesen.httpclient.version>
+		<fesen.runner.version>0.16.0</fesen.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.56</tomcat.version>
