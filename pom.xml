@@ -52,6 +52,10 @@
 		<fesen.httpclient.version>0.16.0</fesen.httpclient.version>
 		<fesen.runner.version>0.16.0</fesen.runner.version>
 
+		<!-- OpenSearch -->
+		<opensearch.version>1.2.2</opensearch.version>
+		<opensearch.runner.version>1.2.2.0</opensearch.runner.version>
+
 		<!-- Tomcat -->
 		<tomcat.version>9.0.56</tomcat.version>
 		<tomcat.boot.version>0.8.0</tomcat.boot.version>
