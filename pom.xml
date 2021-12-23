@@ -49,7 +49,7 @@
 
 		<!-- Fesen -->
 		<fesen.version>0.16.0</fesen.version>
-		<fesen.httpclient.version>0.16.0</fesen.httpclient.version>
+		<fesen.httpclient.version>1.0.0-SNAPSHOT</fesen.httpclient.version>
 		<fesen.runner.version>0.16.0</fesen.runner.version>
 
 		<!-- OpenSearch -->
