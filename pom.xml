@@ -53,8 +53,8 @@
 		<fesen.runner.version>0.16.0</fesen.runner.version>
 
 		<!-- OpenSearch -->
-		<opensearch.version>1.2.2</opensearch.version>
-		<opensearch.runner.version>1.2.2.0</opensearch.runner.version>
+		<opensearch.version>1.2.3</opensearch.version>
+		<opensearch.runner.version>1.2.3.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.56</tomcat.version>
