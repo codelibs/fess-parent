@@ -93,7 +93,7 @@
 		<jodconverter.version>4.4.2</jodconverter.version>
 		<jstl.version>1.2</jstl.version>
 		<jta.version>1.3</jta.version>
-		<log4j.version>2.17.0</log4j.version>
+		<log4j.version>2.17.1</log4j.version>
 		<lucene.version>8.10.1</lucene.version>
 		<microsoft.graph.version>5.2.0</microsoft.graph.version>
 		<minio.version>8.3.4</minio.version>
