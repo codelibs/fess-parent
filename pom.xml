@@ -48,7 +48,7 @@
 		<suggest.version>14.0.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>1.0.0</fesen.httpclient.version>
+		<fesen.httpclient.version>1.0.1-SNAPSHOT</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>1.2.4</opensearch.version>
@@ -69,7 +69,7 @@
 		<commons.pool2.version>2.11.1</commons.pool2.version>
 		<commons.text.version>1.9</commons.text.version>
 		<corelib.version>0.5.4</corelib.version>
-		<curl4j.version>1.2.4</curl4j.version>
+		<curl4j.version>1.2.5-SNAPSHOT</curl4j.version>
 		<google.http.client.version>1.40.0</google.http.client.version>
 		<google.oauth.client.version>1.32.1</google.oauth.client.version>
 		<groovy.version>3.0.9</groovy.version>
