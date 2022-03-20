@@ -45,7 +45,7 @@
 		<crawler.version>14.0.0</crawler.version>
 
 		<!-- Suggest -->
-		<suggest.version>14.0.1-SNAPSHOT</suggest.version>
+		<suggest.version>14.0.1</suggest.version>
 
 		<!-- Fesen -->
 		<fesen.httpclient.version>1.0.1</fesen.httpclient.version>
