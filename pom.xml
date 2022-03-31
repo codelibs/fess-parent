@@ -105,7 +105,7 @@
 		<poi.version>4.1.2</poi.version>
 		<sai.version>0.2.0</sai.version>
 		<slf4j.version>1.7.35</slf4j.version>
-		<spnego.version>1.1.0</spnego.version>
+		<spnego.version>1.1.1-SNAPSHOT</spnego.version>
 		<sqlite.version>3.36.0.3</sqlite.version>
 		<tika.version>2.2.1</tika.version>
 
