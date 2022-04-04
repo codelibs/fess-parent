@@ -128,7 +128,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.9.0</version>
+					<version>3.10.1</version>
 					<configuration>
 						<release>17</release>
 						<encoding>UTF-8</encoding>
@@ -136,7 +136,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.3.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-failsafe-plugin</artifactId>
@@ -144,7 +144,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.3.1</version>
+					<version>3.3.2</version>
 					<configuration>
 						<encoding>UTF-8</encoding>
 						<docencoding>UTF-8</docencoding>
@@ -154,8 +154,12 @@
 					</configuration>
 				</plugin>
 				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.2.2</version>
+				</plugin>
+				<plugin>
 					<artifactId>maven-jxr-plugin</artifactId>
-					<version>3.1.1</version>
+					<version>3.2.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
@@ -163,7 +167,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-shade-plugin</artifactId>
-					<version>3.2.4</version>
+					<version>3.3.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
@@ -217,7 +221,7 @@
 				<plugin>
 					<groupId>net.revelc.code.formatter</groupId>
 					<artifactId>formatter-maven-plugin</artifactId>
-					<version>2.17.1</version>
+					<version>2.18.0</version>
 					<executions>
 						<execution>
 							<goals>
