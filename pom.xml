@@ -98,7 +98,7 @@
 		<log4j.version>2.17.1</log4j.version>
 		<lucene.version>8.10.1</lucene.version>
 		<microsoft.graph.version>5.13.0</microsoft.graph.version>
-		<minio.version>8.3.6</minio.version>
+		<minio.version>8.4.1</minio.version>
 		<nekohtml.version>2.1.2</nekohtml.version>
 		<okhttp.version>4.9.3</okhttp.version>
 		<pdfbox.version>2.0.25</pdfbox.version>
