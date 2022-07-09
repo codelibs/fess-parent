@@ -48,7 +48,7 @@
 		<suggest.version>14.3.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>1.2.0</fesen.httpclient.version>
+		<fesen.httpclient.version>1.2.1-SNAPSHOT</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>1.3.2</opensearch.version>
