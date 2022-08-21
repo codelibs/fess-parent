@@ -61,6 +61,7 @@
 		<!-- Partner Library -->
 		<adal4j.version>1.6.7</adal4j.version>
 		<asm.version>9.3</asm.version>
+		<bouncycastle.version>1.71</bouncycastle.version>
 		<commons.codec.version>1.15</commons.codec.version>
 		<commons.fileupload.version>1.4</commons.fileupload.version>
 		<commons.io.version>2.11.0</commons.io.version>
