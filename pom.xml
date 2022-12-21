@@ -105,6 +105,7 @@
 		<nekohtml.version>2.1.2</nekohtml.version>
 		<okhttp.version>4.10.0</okhttp.version>
 		<pdfbox.version>2.0.27</pdfbox.version>
+		<playwright.version>1.28.1</playwright.version>
 		<poi.version>5.2.3</poi.version>
 		<sai.version>0.2.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
