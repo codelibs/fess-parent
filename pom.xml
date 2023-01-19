@@ -31,7 +31,7 @@
 		<version>9</version>
 	</parent>
 	<properties>
-		<fess.version>14.6.0-SNAPSHOT</fess.version>
+		<fess.version>14.6.0</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.6</dbflute.version>
@@ -42,14 +42,14 @@
 		<mailflute.version>0.6.4</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>14.6.0-SNAPSHOT</crawler.version>
-		<crawler.playwright.version>14.6.0-SNAPSHOT</crawler.playwright.version>
+		<crawler.version>14.6.0</crawler.version>
+		<crawler.playwright.version>14.6.0</crawler.playwright.version>
 
 		<!-- Suggest -->
-		<suggest.version>14.6.0-SNAPSHOT</suggest.version>
+		<suggest.version>14.6.0</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>2.0.0-SNAPSHOT</fesen.httpclient.version>
+		<fesen.httpclient.version>2.0.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>2.4.1</opensearch.version>
@@ -90,7 +90,7 @@
 		<javax.servlet.api.version>4.0.1</javax.servlet.api.version>
 		<javax.transaction.api.version>1.3</javax.transaction.api.version>
 		<jbig2.imageio.version>3.0.4</jbig2.imageio.version>
-		<jcifs.version>2.1.33-SNAPSHOT</jcifs.version>
+		<jcifs.version>2.1.33</jcifs.version>
 		<jersey.common.version>3.0.4</jersey.common.version>
 		<jhighlight.version>1.1.0</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
