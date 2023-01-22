@@ -42,8 +42,8 @@
 		<mailflute.version>0.6.4</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>14.6.0</crawler.version>
-		<crawler.playwright.version>14.6.0</crawler.playwright.version>
+		<crawler.version>14.6.1-SNAPSHOT</crawler.version>
+		<crawler.playwright.version>14.6.1-SNAPSHOT</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>14.6.0</suggest.version>
