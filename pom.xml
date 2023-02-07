@@ -31,7 +31,7 @@
 		<version>9</version>
 	</parent>
 	<properties>
-		<fess.version>14.6.0</fess.version>
+		<fess.version>14.6.1</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.6</dbflute.version>
@@ -43,7 +43,7 @@
 
 		<!-- Crawler -->
 		<crawler.version>14.6.1</crawler.version>
-		<crawler.playwright.version>14.6.1</crawler.playwright.version>
+		<crawler.playwright.version>14.6.3</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>14.6.0</suggest.version>
