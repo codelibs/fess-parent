@@ -56,7 +56,7 @@
 		<opensearch.runner.version>2.5.0.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
-		<tomcat.version>9.0.69</tomcat.version>
+		<tomcat.version>9.0.71</tomcat.version>
 		<tomcat.boot.version>0.8.2</tomcat.boot.version>
 
 		<!-- Partner Library -->
