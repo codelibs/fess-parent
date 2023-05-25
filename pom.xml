@@ -43,7 +43,7 @@
 
 		<!-- Crawler -->
 		<crawler.version>14.8.0</crawler.version>
-		<crawler.playwright.version>14.8.0</crawler.playwright.version>
+		<crawler.playwright.version>14.8.1</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>14.8.0</suggest.version>
