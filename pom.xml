@@ -180,13 +180,13 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.2.1</version>
 					<executions>
 						<execution>
-							<id>attach-sources</id>
-							<phase>verify</phase>
+							<id>source-jar</id>
+							<phase>package</phase>
 							<goals>
-								<goal>jar-no-fork</goal>
+								<goal>jar</goal>
 							</goals>
 						</execution>
 					</executions>
