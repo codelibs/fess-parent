@@ -64,7 +64,7 @@
 		<asm.version>9.5</asm.version>
 		<azure.identity.version>1.9.2</azure.identity.version>
 		<azure.core.http.netty.version>1.13.5</azure.core.http.netty.version>
-		<bouncycastle.version>1.75</bouncycastle.version>
+		<bouncycastle.version>1.74</bouncycastle.version>
 		<commons.codec.version>1.16.0</commons.codec.version>
 		<commons.fileupload.version>1.5</commons.fileupload.version>
 		<commons.io.version>2.13.0</commons.io.version>
