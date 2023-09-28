@@ -46,7 +46,7 @@
 		<crawler.playwright.version>14.11.0-SNAPSHOT</crawler.playwright.version>
 
 		<!-- Suggest -->
-		<suggest.version>14.10.0-SNAPSHOT</suggest.version>
+		<suggest.version>14.11.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
 		<fesen.httpclient.version>2.10.0-SNAPSHOT</fesen.httpclient.version>
