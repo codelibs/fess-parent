@@ -282,14 +282,14 @@
 			<url>https://maven.codelibs.org/</url>
 		</repository>
 		<repository>
-			<id>oss.sonatype.org</id>
+			<id>public.oss.sonatype.org</id>
 			<name>oss.sonatype.org</name>
 			<url>https://oss.sonatype.org/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
