@@ -52,8 +52,8 @@
 		<fesen.httpclient.version>2.11.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
-		<opensearch.version>2.11.0</opensearch.version>
-		<opensearch.runner.version>2.11.0.0</opensearch.runner.version>
+		<opensearch.version>2.11.1</opensearch.version>
+		<opensearch.runner.version>2.11.1.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.82</tomcat.version>
