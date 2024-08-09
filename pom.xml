@@ -49,11 +49,11 @@
 		<suggest.version>14.16.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>2.15.0</fesen.httpclient.version>
+		<fesen.httpclient.version>2.16.0-SNAPSHOT</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
-		<opensearch.version>2.15.0</opensearch.version>
-		<opensearch.runner.version>2.15.0.0</opensearch.runner.version>
+		<opensearch.version>2.16.0</opensearch.version>
+		<opensearch.runner.version>2.16.0.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>9.0.91</tomcat.version>
