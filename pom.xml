@@ -101,7 +101,7 @@
 		<jakarta.jstl.api.version>3.0.0</jakarta.jstl.api.version>
 		<jakarta.jstl.version>3.0.1</jakarta.jstl.version>
 		<jakarta.transaction.version>2.0.1</jakarta.transaction.version>
-		<log4j.version>2.24.2</log4j.version>
+		<log4j.version>2.21.0</log4j.version>
 		<log4j.ecs.version>1.6.0</log4j.ecs.version>
 		<lucene.version>9.12.0</lucene.version>
 		<microsoft.graph.version>5.80.0</microsoft.graph.version>
