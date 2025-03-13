@@ -109,14 +109,14 @@
 		<minio.version>8.5.14</minio.version>
 		<nekohtml.version>2.1.3</nekohtml.version>
 		<okhttp.version>4.12.0</okhttp.version>
-		<pdfbox.version>2.0.33</pdfbox.version>
+		<pdfbox.version>3.0.4</pdfbox.version>
 		<playwright.version>1.50.0</playwright.version>
 		<poi.version>5.4.0</poi.version>
 		<sai.version>0.2.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<spnego.version>1.2.0</spnego.version>
 		<sqlite.version>3.42.0.0</sqlite.version>
-		<tika.version>2.9.3</tika.version>
+		<tika.version>3.1.0</tika.version>
 
 		<!-- Testing -->
 		<utflute.version>2.0.0</utflute.version>
