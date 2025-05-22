@@ -35,7 +35,7 @@
 		<url>https://github.com/codelibs/fess</url>
 	</scm>
 	<properties>
-		<fess.version>14.19.2-SNAPSHOT</fess.version>
+		<fess.version>14.19.2</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.8</dbflute.version>
@@ -46,8 +46,8 @@
 		<mailflute.version>0.6.5</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>14.19.1-SNAPSHOT</crawler.version>
-		<crawler.playwright.version>14.19.1-SNAPSHOT</crawler.playwright.version>
+		<crawler.version>14.19.1</crawler.version>
+		<crawler.playwright.version>14.19.1</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>14.19.0</suggest.version>
