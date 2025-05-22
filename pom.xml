@@ -20,6 +20,15 @@
 		<name>CodeLibs</name>
 		<url>https://fess.codelibs.org/</url>
 	</organization>
+	<developers>
+		<developer>
+			<id>shinsuke</id>
+			<name>Shinsuke Sugaya</name>
+			<email>shinsuke.sugaya@codelibs.co</email>
+			<organization>CodeLibs Inc.</organization>
+			<organizationUrl>https://codelibs.co</organizationUrl>
+		</developer>
+	</developers>
 	<scm>
 		<connection>scm:git:git@github.com:codelibs/fess-parent.git</connection>
 		<developerConnection>scm:git:git@github.com:codelibs/fess-parent.git</developerConnection>
@@ -37,8 +46,8 @@
 		<mailflute.version>0.6.5</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>14.19.0</crawler.version>
-		<crawler.playwright.version>14.19.0</crawler.playwright.version>
+		<crawler.version>14.19.1-SNAPSHOT</crawler.version>
+		<crawler.playwright.version>14.19.1-SNAPSHOT</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>14.19.0</suggest.version>
@@ -323,20 +332,9 @@
 			<url>https://maven.codelibs.org/</url>
 		</repository>
 		<repository>
-			<id>public.oss.sonatype.org</id>
-			<name>oss.sonatype.org</name>
-			<url>https://oss.sonatype.org/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>central-portal-snapshots</id>
+			<name>Central Portal Snapshots</name>
+			<url>https://central.sonatype.com/repository/maven-snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
