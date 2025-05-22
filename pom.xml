@@ -165,7 +165,16 @@
 						<charset>UTF-8</charset>
 						<locale>en_US</locale>
 						<source>17</source>
+						<legacyMode>true</legacyMode>
 					</configuration>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
@@ -188,10 +197,9 @@
 					<version>3.2.1</version><!-- https://issues.apache.org/jira/browse/MSOURCES-143 -->
 					<executions>
 						<execution>
-							<id>source-jar</id>
-							<phase>package</phase>
+							<id>attach-sources</id>
 							<goals>
-								<goal>jar</goal>
+								<goal>jar-no-fork</goal>
 							</goals>
 						</execution>
 					</executions>
