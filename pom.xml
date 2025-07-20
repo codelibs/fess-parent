@@ -36,7 +36,7 @@
 	  <tag>HEAD</tag>
   </scm>
 	<properties>
-		<fess.version>15.1.0-SNAPSHOT</fess.version>
+		<fess.version>15.1.0</fess.version>
 
 		<!-- Main Framework -->
 		<dbflute.version>1.2.9</dbflute.version>
@@ -47,14 +47,14 @@
 		<mailflute.version>2.0.0</mailflute.version>
 
 		<!-- Crawler -->
-		<crawler.version>15.1.0-SNAPSHOT</crawler.version>
-		<crawler.playwright.version>15.1.0-SNAPSHOT</crawler.playwright.version>
+		<crawler.version>15.1.0</crawler.version>
+		<crawler.playwright.version>15.1.0</crawler.playwright.version>
 
 		<!-- Suggest -->
-		<suggest.version>15.1.0-SNAPSHOT</suggest.version>
+		<suggest.version>15.1.0</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>3.1.0-SNAPSHOT</fesen.httpclient.version>
+		<fesen.httpclient.version>3.1.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>3.1.0</opensearch.version>
