@@ -67,8 +67,9 @@
 		<!-- Partner Library -->
 		<adal4j.version>1.6.7</adal4j.version>
 		<asm.version>9.8</asm.version>
-		<azure.identity.version>1.12.2</azure.identity.version>
-		<azure.core.http.netty.version>1.13.11</azure.core.http.netty.version>
+		<azure.core.version>1.55.4</azure.core.version>
+		<azure.identity.version>1.16.3</azure.identity.version>
+		<azure.core.http.netty.version>1.15.3</azure.core.http.netty.version>
 		<bouncycastle.version>1.80</bouncycastle.version>
 		<commons.codec.version>1.18.0</commons.codec.version>
 		<commons.fileupload.version>2.0.0-M2</commons.fileupload.version>
