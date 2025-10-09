@@ -119,7 +119,7 @@
 		<pdfbox.version>3.0.4</pdfbox.version>
 		<playwright.version>1.54.0</playwright.version>
 		<poi.version>5.4.0</poi.version>
-		<sai.version>0.2.0</sai.version>
+		<sai.version>0.3.0-SNAPSHOT</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<spnego.version>1.2.0</spnego.version>
 		<sqlite.version>3.42.0.0</sqlite.version>
