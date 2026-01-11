@@ -129,7 +129,7 @@
 		<tika.version>3.2.3</tika.version>
 
 		<!-- Testing -->
-		<utflute.version>2.5.0-A-SNAPSHOT</utflute.version>
+		<utflute.version>2.5.0-B-SNAPSHOT</utflute.version>
 		<junit.version>4.13.2</junit.version>
 		<junit.jupiter.version>5.12.2</junit.jupiter.version>
 		<junit.vintage.version>5.12.2</junit.vintage.version>
