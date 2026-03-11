@@ -118,7 +118,7 @@
 		<lucene.version>10.3.2</lucene.version>
 		<microsoft.graph.version>6.47.0</microsoft.graph.version>
 		<minio.version>8.6.0</minio.version>
-		<nekohtml.version>3.0.2</nekohtml.version>
+		<nekohtml.version>3.0.3-SNAPSHOT</nekohtml.version>
 		<okhttp.version>5.1.0</okhttp.version>
 		<pdfbox.version>3.0.6</pdfbox.version>
 		<playwright.version>1.58.0</playwright.version>
