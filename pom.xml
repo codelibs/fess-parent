@@ -61,8 +61,8 @@
 		<opensearch.runner.version>3.5.0.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
-		<tomcat.version>10.1.52</tomcat.version>
-		<tomcat.boot.version>2.0.0</tomcat.boot.version>
+		<tomcat.version>11.0.18</tomcat.version>
+		<tomcat.boot.version>3.0.0-A-SNAPSHOT</tomcat.boot.version>
 
 		<!-- Partner Library -->
 		<msal4j.version>1.24.0</msal4j.version>
@@ -95,7 +95,7 @@
 		<jackson.annotations.version>2.20</jackson.annotations.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
 		<java.saml.version>3.0.1</java.saml.version>
-		<jakarta.annotation.api.version>2.1.1</jakarta.annotation.api.version>
+		<jakarta.annotation.api.version>3.0.0</jakarta.annotation.api.version>
 		<jakarta.mail.version>2.0.3</jakarta.mail.version>
 		<jakarta.servlet.api.version>6.1.0</jakarta.servlet.api.version>
 		<jakarta.transaction.api.version>2.0.1</jakarta.transaction.api.version>
