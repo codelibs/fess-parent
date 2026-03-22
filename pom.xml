@@ -62,7 +62,7 @@
 
 		<!-- Tomcat -->
 		<tomcat.version>11.0.18</tomcat.version>
-		<tomcat.boot.version>3.0.0-A-SNAPSHOT</tomcat.boot.version>
+		<tomcat.boot.version>3.0.0</tomcat.boot.version>
 
 		<!-- Partner Library -->
 		<msal4j.version>1.24.0</msal4j.version>
