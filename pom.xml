@@ -94,7 +94,7 @@
 		<jackson.version>2.20.1</jackson.version>
 		<jackson.annotations.version>2.20</jackson.annotations.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
-		<java.saml.version>3.0.1</java.saml.version>
+		<java.saml.version>3.1.0-SNAPSHOT</java.saml.version>
 		<jakarta.annotation.api.version>3.0.0</jakarta.annotation.api.version>
 		<jakarta.mail.version>2.0.3</jakarta.mail.version>
 		<jakarta.servlet.api.version>6.1.0</jakarta.servlet.api.version>
@@ -102,7 +102,7 @@
 		<jbig2.imageio.version>3.0.4</jbig2.imageio.version>
 		<jcifs.version>3.0.2</jcifs.version>
 		<jersey.common.version>3.1.10</jersey.common.version>
-		<jhighlight.version>1.1.1</jhighlight.version>
+		<jhighlight.version>2.0.0-SNAPSHOT</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
 		<jodconverter.version>4.4.9</jodconverter.version>
 		<jakarta.jstl.api.version>3.0.2</jakarta.jstl.api.version>
