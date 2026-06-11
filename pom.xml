@@ -54,11 +54,11 @@
 		<suggest.version>15.7.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>3.6.0</fesen.httpclient.version>
+		<fesen.httpclient.version>3.7.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
-		<opensearch.version>3.6.0</opensearch.version>
-		<opensearch.runner.version>3.6.0.0</opensearch.runner.version>
+		<opensearch.version>3.7.0</opensearch.version>
+		<opensearch.runner.version>3.7.0.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>11.0.21</tomcat.version>
@@ -91,7 +91,7 @@
 		<httpcomponents.version>4.5.14</httpcomponents.version>
 		<httpclient5.version>5.6.1</httpclient5.version>
 		<icu4j.version>78.3</icu4j.version>
-		<jackson.version>2.21.2</jackson.version>
+		<jackson.version>2.21.3</jackson.version>
 		<jackson.annotations.version>2.21</jackson.annotations.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
 		<java.saml.version>3.1.0</java.saml.version>
@@ -109,7 +109,7 @@
 		<jakarta.jstl.version>3.0.1</jakarta.jstl.version>
 		<jakarta.transaction.version>2.0.1</jakarta.transaction.version>
 		<kryo.version>5.6.2</kryo.version>
-		<log4j.version>2.25.3</log4j.version>
+		<log4j.version>2.25.4</log4j.version>
 		<log4j.ecs.version>1.7.0</log4j.ecs.version>
 		<lucene.version>10.4.0</lucene.version>
 		<microsoft.graph.version>6.63.0</microsoft.graph.version>
