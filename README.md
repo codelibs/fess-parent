@@ -1,156 +1,99 @@
 # Fess Parent POM
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.codelibs.fess/fess-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.codelibs.fess/fess-parent)
+[![Maven Central](https://img.shields.io/maven-central/v/org.codelibs.fess/fess-parent?label=Maven%20Central)](https://central.sonatype.com/artifact/org.codelibs.fess/fess-parent)
 
-A Maven parent POM that centralizes dependency version management for the Fess (Full tExt Search System) ecosystem.
+The Maven parent POM for [Fess](https://fess.codelibs.org/) (Full tExt Search System) and its related modules. It centralizes dependency version management, plugin configuration, and build conventions so that every project in the Fess ecosystem builds consistently.
 
 ## Overview
 
-The `fess-parent` project serves as the central dependency management hub for all Fess-related libraries and applications. It provides consistent versioning across the entire Fess ecosystem, ensuring compatibility and simplifying maintenance.
+`fess-parent` is a `pom`-packaging project with no source code of its own. Modules across the Fess ecosystem — the main application, crawler, suggest, and the various data store and web application plugins — declare it as their parent to inherit:
 
-**Fess** is a powerful, user-friendly full-text search server built on top of OpenSearch. It provides a comprehensive search solution with web crawling capabilities, making it easy to search across websites, file systems, and databases.
+- Managed versions for the framework, search engine, and third-party libraries used throughout Fess
+- A shared set of Maven plugins pinned to known-good versions
+- Common build settings such as the Java release level, source encoding, license-header enforcement, and code formatting
+- Artifact signing and Maven Central publishing configuration for releases
 
-## Key Features
+Keeping these definitions in one place ensures compatible versions across modules and reduces the effort of upgrading dependencies.
 
-- **Centralized Dependency Management**: Manages versions for 50+ dependencies
-- **Java 21 Support**: Built with modern Java standards
-- **OpenSearch 3**: Latest search engine capabilities
-- **Maven Plugin Management**: Pre-configured plugins with optimal settings
-- **License Management**: Automated Apache License header management
-- **Code Formatting**: Consistent code style across projects
+## Requirements
+
+- Java 21 or later
+- Maven 3.8 or later
 
 ## Usage
 
-### As a Parent POM
-
-Add this as your parent POM in your project's `pom.xml`:
+Declare `fess-parent` as the parent of your module:
 
 ```xml
 <parent>
     <groupId>org.codelibs.fess</groupId>
     <artifactId>fess-parent</artifactId>
-    <version>15.2.0-SNAPSHOT</version>
+    <version>15.7.0</version>
+    <!-- Refer to the Maven Central badge above for the latest release -->
 </parent>
 ```
 
-## Development
+Dependency and plugin versions are exposed as Maven properties (for example `${lastaflute.version}`, `${opensearch.version}`, and `${tika.version}`), so child modules can reference the managed versions directly.
 
-### Prerequisites
+### Snapshots
 
-- Java 21 or higher
-- Maven 3.6 or higher
+Development snapshots are published to the CodeLibs and Central Portal snapshot repositories, both already configured in this POM. Released artifacts are available from Maven Central.
 
-### Building
+## Build
+
+Because this is a parent POM, building it simply installs the POM into your local repository:
 
 ```bash
-# Clean and compile
-mvn clean compile
-
-# Install to local repository
+# Install the POM into the local Maven repository
 mvn clean install
 
-# Deploy to remote repository (maintainers only)
+# Deploy to the remote repository (maintainers only)
 mvn clean deploy
 ```
 
-### Code Quality
+The plugin and build configuration defined here (compiler, Surefire/Failsafe, JaCoCo, license, formatter, and others) takes effect in the child modules that inherit from this POM, not in `fess-parent` itself.
 
-```bash
-# Format code
-mvn formatter:format
+## What This POM Manages
 
-# Check/add license headers
-mvn license:check
-mvn license:format
+- **Framework**: LastaFlute, Lasta Di, DBFlute, MailFlute
+- **Search engine**: OpenSearch and the OpenSearch runner
+- **Fess modules**: crawler, suggest, and the Fesen HTTP client
+- **Runtime**: Tomcat and its boot integration
+- **Libraries**: Apache Tika, PDFBox, POI, Lucene, Jackson, Guava, Log4j, and many more
+- **Testing**: JUnit 4, JUnit Jupiter, and UTFlute
+- **Plugins**: the Maven plugins used to compile, test, format, license-check, sign, and publish Fess modules
 
-# Generate test coverage reports
-mvn clean test jacoco:report
-```
+## Release
 
-### Testing
+Releases follow semantic versioning (`major.minor.patch`) and are produced with the Maven Release Plugin:
 
-```bash
-# Run unit tests
-mvn test
-
-# Run integration tests
-mvn failsafe:integration-test
-
-# Run all tests with coverage
-mvn clean verify
-```
-
-## Maven Plugin Configuration
-
-This parent POM provides optimized configurations for:
-
-- **Compiler Plugin**: Java 21 with UTF-8 encoding
-- **Surefire/Failsafe**: Test execution with proper isolation
-- **License Plugin**: Automated Apache license header management
-- **Formatter Plugin**: Consistent code formatting
-- **GPG Plugin**: Artifact signing for releases
-- **Central Publishing**: Maven Central deployment
-
-## Repository Structure
-
-```
-fess-parent/
-├── pom.xml           # Main parent POM
-├── README.md         # This file
-└── LICENSE           # Apache License 2.0
-```
-
-## Release Process
-
-This project follows semantic versioning and uses the Maven Release Plugin:
-
-1. All artifacts are signed with GPG
-2. Released to Maven Central via Central Publishing Plugin
-3. Follows the pattern: `major.minor.patch`
+1. Artifacts are signed with GPG under the `release` profile.
+2. They are published to Maven Central through the Central Publishing Plugin.
 
 ## Contributing
 
-We welcome contributions! Please follow these guidelines:
+Contributions are welcome. A typical workflow:
 
-### Prerequisites
+1. Fork the repository and create a topic branch.
+2. Make your change — for a version update, edit the relevant property in `pom.xml`.
+3. Verify the POM builds with `mvn clean install`.
+4. Open a pull request with a clear description of the change.
 
-- Fork the repository
-- Create a feature branch
-- Follow existing code style and conventions
-
-### Development Workflow
-
-1. **License Headers**: Ensure all Java files have proper Apache license headers
-   ```bash
-   mvn license:format
-   ```
-
-2. **Testing**: Add tests for any new functionality
-   ```bash
-   mvn test
-   ```
-
-### Submitting Changes
-
-1. Ensure all tests pass
-2. Follow conventional commit messages
-3. Create a pull request with a clear description
-4. Address any feedback from code review
+Please use conventional commit messages and keep each change focused.
 
 ## Related Projects
 
-- **[Fess](https://github.com/codelibs/fess)**: Main search server application
-- **[Fess Crawler](https://github.com/codelibs/fess-crawler)**: Web crawling engine
-- **[Fess Suggest](https://github.com/codelibs/fess-suggest)**: Search suggestion system
+- [Fess](https://github.com/codelibs/fess) — the main full-text search server
+- [Fess Crawler](https://github.com/codelibs/fess-crawler) — web, file system, and data store crawler
+- [Fess Suggest](https://github.com/codelibs/fess-suggest) — search suggestion library
 
 ## Support
 
-- **Documentation**: [https://fess.codelibs.org/](https://fess.codelibs.org/)
-- **Issues**: [GitHub Issues](https://github.com/codelibs/fess/issues)
-- **Discussions**: [Discussion Forum](https://discuss.codelibs.org/)
+- Documentation: https://fess.codelibs.org/
+- Issues: https://github.com/codelibs/fess/issues
+- Discussions: https://discuss.codelibs.org/
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
+Licensed under the [Apache License, Version 2.0](LICENSE).
