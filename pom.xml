@@ -54,7 +54,7 @@
 		<suggest.version>15.8.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>3.7.0</fesen.httpclient.version>
+		<fesen.httpclient.version>3.7.1-SNAPSHOT</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>3.7.0</opensearch.version>
