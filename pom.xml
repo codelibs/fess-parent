@@ -134,6 +134,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
+		<extensions>
+			<!-- Wagon provider for scp:// transport to maven.codelibs.org -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>3.5.3</version>
+			</extension>
+		</extensions>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -302,6 +310,21 @@
 					<artifactId>rpm-maven-plugin</artifactId>
 					<version>2.3.0</version>
 				</plugin>
+				<!-- Declared here for version and configuration only. The repositories
+				     that publish to Maven Central (fess, fess-crawler,
+				     fess-crawler-playwright, fess-suggest) declare the plugin in their
+				     own build/plugins. Declaring it in build/plugins here would make
+				     every plugin inherit it, and its DeployLifecycleParticipant would
+				     disable maven-deploy-plugin, breaking deployment to
+				     maven.codelibs.org. -->
+				<plugin>
+					<groupId>org.sonatype.central</groupId>
+					<artifactId>central-publishing-maven-plugin</artifactId>
+					<version>0.11.0</version>
+					<configuration>
+						<publishingServerId>central</publishingServerId>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
@@ -312,14 +335,14 @@
 					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
+			<!-- fess-parent itself publishes to Maven Central. inherited=false keeps
+			     this out of child projects, so the plugins use the scp
+			     distributionManagement below instead. -->
 			<plugin>
 				<groupId>org.sonatype.central</groupId>
 				<artifactId>central-publishing-maven-plugin</artifactId>
-				<version>0.11.0</version>
 				<extensions>true</extensions>
-				<configuration>
-					<publishingServerId>central</publishingServerId>
-				</configuration>
+				<inherited>false</inherited>
 			</plugin>
 		</plugins>
 	</build>
@@ -349,11 +372,39 @@
 			</build>
 		</profile>
 	</profiles>
+	<!-- Deployment target for the Fess plugins (fess-ds-*, fess-llm-*, fess-webapp-*,
+	     fess-script-*, fess-theme-*, fess-thumbnail-*, fess-ingest-*).
+	     This is unused by fess-parent itself and by fess / fess-crawler /
+	     fess-crawler-playwright / fess-suggest, because central-publishing-maven-plugin
+	     disables maven-deploy-plugin in those projects. -->
+	<distributionManagement>
+		<repository>
+			<id>codelibs-repo</id>
+			<name>CodeLibs Repository</name>
+			<url>scp://maven.codelibs.org/var/www/maven/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>codelibs-snapshots</id>
+			<name>CodeLibs Snapshot Repository</name>
+			<url>scp://maven.codelibs.org/var/www/maven/snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>codelibs.org</id>
 			<name>CodeLibs Repository</name>
-			<url>https://maven.codelibs.org/</url>
+			<url>https://maven.codelibs.org/release/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>codelibs.org.snapshot</id>
+			<name>CodeLibs Snapshot Repository</name>
+			<url>https://maven.codelibs.org/snapshot/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
 			<id>central-portal-snapshots</id>
@@ -371,7 +422,18 @@
 		<repository>
 			<id>codelibs.org</id>
 			<name>CodeLibs Repository</name>
-			<url>https://maven.codelibs.org/</url>
+			<url>https://maven.codelibs.org/release/</url>
+		</repository>
+		<repository>
+			<id>codelibs.org.snapshot</id>
+			<name>CodeLibs Snapshot Repository</name>
+			<url>https://maven.codelibs.org/snapshot/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>central-portal-snapshots</id>
