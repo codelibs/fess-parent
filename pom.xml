@@ -135,10 +135,16 @@
 	</properties>
 	<build>
 		<extensions>
-			<!-- Wagon provider for scp:// transport to maven.codelibs.org -->
+			<!-- Wagon provider for scpexe:// transport to maven.codelibs.org. This uses the
+			     external ssh and scp commands rather than an embedded SSH client, so key
+			     handling follows the system OpenSSH configuration: ed25519 keys, the OpenSSH
+			     key file format, ssh-agent and ~/.ssh/config all work. The embedded
+			     alternative, wagon-ssh, depends on com.jcraft:jsch 0.1.55, which supports
+			     only DSA, ECDSA, RSA and PKCS8 keys and rejects anything else with
+			     "invalid privatekey". -->
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ssh</artifactId>
+				<artifactId>wagon-ssh-external</artifactId>
 				<version>3.5.3</version>
 			</extension>
 		</extensions>
@@ -372,23 +378,15 @@
 			</build>
 		</profile>
 	</profiles>
-	<!-- Deployment target for the Fess plugins (fess-ds-*, fess-llm-*, fess-webapp-*,
-	     fess-script-*, fess-theme-*, fess-thumbnail-*, fess-ingest-*).
-	     This is unused by fess-parent itself and by fess / fess-crawler /
-	     fess-crawler-playwright / fess-suggest, because central-publishing-maven-plugin
-	     disables maven-deploy-plugin in those projects. -->
-	<distributionManagement>
-		<repository>
-			<id>codelibs-repo</id>
-			<name>CodeLibs Repository</name>
-			<url>scp://maven.codelibs.org/var/www/maven/release</url>
-		</repository>
-		<snapshotRepository>
-			<id>codelibs-snapshots</id>
-			<name>CodeLibs Snapshot Repository</name>
-			<url>scp://maven.codelibs.org/var/www/maven/snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
+	<!-- No distributionManagement here on purpose. It is inherited unconditionally and a
+	     POM cannot exempt itself from what it declares, so declaring the CodeLibs
+	     repositories here would also redirect the SNAPSHOT deployments of fess-parent,
+	     fess, fess-crawler, fess-crawler-playwright and fess-suggest, which must stay on
+	     Maven Central: central-publishing-maven-plugin resolves SNAPSHOT deployments
+	     through project.getDistributionManagementArtifactRepository() and only falls back
+	     to centralSnapshotsUrl when it is absent. Each Fess plugin declares the CodeLibs
+	     repositories in its own POM instead. The wagon-ssh-external build extension above is
+	     inherited and provides the scpexe transport those plugins need. -->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>codelibs.org</id>
