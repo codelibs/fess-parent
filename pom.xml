@@ -135,10 +135,16 @@
 	</properties>
 	<build>
 		<extensions>
-			<!-- Wagon provider for scp:// transport to maven.codelibs.org -->
+			<!-- Wagon provider for scpexe:// transport to maven.codelibs.org. This drives the
+			     external ssh and scp commands rather than an embedded SSH client, so key
+			     handling follows the system OpenSSH configuration: ed25519 keys, the OpenSSH
+			     key file format, ssh-agent and ~/.ssh/config all work. The embedded
+			     alternative, wagon-ssh, depends on com.jcraft:jsch 0.1.55, whose only key
+			     types are DSA, ECDSA, RSA and PKCS8; anything else is rejected with
+			     "invalid privatekey" before a connection is even attempted. -->
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ssh</artifactId>
+				<artifactId>wagon-ssh-external</artifactId>
 				<version>3.5.3</version>
 			</extension>
 		</extensions>
@@ -379,8 +385,8 @@
 	     Maven Central: central-publishing-maven-plugin resolves SNAPSHOT deployments
 	     through project.getDistributionManagementArtifactRepository() and only falls back
 	     to centralSnapshotsUrl when it is absent. Each Fess plugin declares the CodeLibs
-	     repositories in its own POM instead. The wagon-ssh build extension above is
-	     inherited and provides the scp transport those plugins need. -->
+	     repositories in its own POM instead. The wagon-ssh-external build extension
+	     above is inherited and provides the scpexe transport those plugins need. -->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>codelibs.org</id>
