@@ -316,13 +316,11 @@
 					<artifactId>rpm-maven-plugin</artifactId>
 					<version>2.3.0</version>
 				</plugin>
-				<!-- Declared here for version and configuration only. The repositories
-				     that publish to Maven Central (fess, fess-crawler,
-				     fess-crawler-playwright, fess-suggest) declare the plugin in their
-				     own build/plugins. Declaring it in build/plugins here would make
-				     every plugin inherit it, and its DeployLifecycleParticipant would
-				     disable maven-deploy-plugin, breaking deployment to
-				     maven.codelibs.org. -->
+				<!-- Declared here for version and configuration only, so that the
+				     inherited=false declaration in build/plugins below picks them up.
+				     Declaring it in build/plugins here would make every child inherit
+				     it, and its DeployLifecycleParticipant would disable
+				     maven-deploy-plugin, breaking deployment to maven.codelibs.org. -->
 				<plugin>
 					<groupId>org.sonatype.central</groupId>
 					<artifactId>central-publishing-maven-plugin</artifactId>
@@ -341,9 +339,14 @@
 					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
-			<!-- fess-parent itself publishes to Maven Central. inherited=false keeps
-			     this out of child projects, so the plugins use the scp
-			     distributionManagement below instead. -->
+			<!-- fess-parent itself publishes to Maven Central. It is the one artifact
+			     in the Fess ecosystem that has to stay there: a POM can only be
+			     resolved from repositories a project already knows about, and the
+			     CodeLibs repositories this POM declares are not visible until this POM
+			     has been read. Keeping it on Maven Central lets every child - including
+			     third-party plugins - resolve the parent without extra configuration.
+			     inherited=false keeps the plugin out of child projects, so they use
+			     their own scp distributionManagement instead. -->
 			<plugin>
 				<groupId>org.sonatype.central</groupId>
 				<artifactId>central-publishing-maven-plugin</artifactId>
@@ -380,13 +383,13 @@
 	</profiles>
 	<!-- No distributionManagement here on purpose. It is inherited unconditionally and a
 	     POM cannot exempt itself from what it declares, so declaring the CodeLibs
-	     repositories here would also redirect the SNAPSHOT deployments of fess-parent,
-	     fess, fess-crawler, fess-crawler-playwright and fess-suggest, which must stay on
-	     Maven Central: central-publishing-maven-plugin resolves SNAPSHOT deployments
-	     through project.getDistributionManagementArtifactRepository() and only falls back
-	     to centralSnapshotsUrl when it is absent. Each Fess plugin declares the CodeLibs
+	     repositories here would also redirect the SNAPSHOT deployments of fess-parent
+	     itself, which must stay on Maven Central: central-publishing-maven-plugin
+	     resolves SNAPSHOT deployments through
+	     project.getDistributionManagementArtifactRepository() and only falls back to
+	     centralSnapshotsUrl when it is absent. Every child project declares the CodeLibs
 	     repositories in its own POM instead. The wagon-ssh-external build extension
-	     above is inherited and provides the scpexe transport those plugins need. -->
+	     above is inherited and provides the scpexe transport they need. -->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>codelibs.org</id>

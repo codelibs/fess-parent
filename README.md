@@ -12,7 +12,7 @@ The Maven parent POM for [Fess](https://fess.codelibs.org/) (Full tExt Search Sy
 - Managed versions for the framework, search engine, and third-party libraries used throughout Fess
 - A shared set of Maven plugins pinned to known-good versions
 - Common build settings such as the Java release level, source encoding, license-header enforcement, and code formatting
-- Artifact signing and Maven Central publishing configuration for releases
+- Artifact signing, plus the `scpexe` wagon used to publish releases to the CodeLibs Maven repository
 
 Keeping these definitions in one place ensures compatible versions across modules and reduces the effort of upgrading dependencies.
 
@@ -38,7 +38,7 @@ Dependency and plugin versions are exposed as Maven properties (for example `${l
 
 ### Snapshots
 
-Development snapshots are published to the CodeLibs and Central Portal snapshot repositories, both already configured in this POM. Released artifacts are available from Maven Central.
+Snapshots of `fess-parent` itself are published to the Central Portal snapshot repository; snapshots of the modules that inherit from it are published to the CodeLibs snapshot repository. Both, along with the CodeLibs release repository, are already configured in this POM, so child modules resolve them without extra setup.
 
 ## Build
 
@@ -69,7 +69,8 @@ The plugin and build configuration defined here (compiler, Surefire/Failsafe, Ja
 Releases follow semantic versioning (`major.minor.patch`) and are produced with the Maven Release Plugin:
 
 1. Artifacts are signed with GPG under the `release` profile.
-2. They are published to Maven Central through the Central Publishing Plugin.
+2. `fess-parent` itself is published to Maven Central through the Central Publishing Plugin. It stays there deliberately: a parent POM can only be fetched from repositories the consuming project already knows about, so keeping it on Maven Central lets every child — including third-party plugins — resolve it without configuring an extra repository first.
+3. Every module inheriting from this POM publishes to the CodeLibs Maven repository over `scpexe`, using the `distributionManagement` declared in its own POM.
 
 ## Contributing
 
