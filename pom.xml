@@ -123,7 +123,7 @@
 		<s3.version>2.46.9</s3.version>
 		<sai.version>0.3.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
-		<spnego.version>1.2.2-SNAPSHOT</spnego.version>
+		<spnego.version>1.2.1</spnego.version>
 		<tika.version>3.3.1</tika.version>
 
 		<!-- Testing -->
