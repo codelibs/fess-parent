@@ -113,7 +113,6 @@
 		<log4j.ecs.version>1.8.0</log4j.ecs.version>
 		<lucene.version>10.5.0</lucene.version>
 		<microsoft.graph.version>6.67.0</microsoft.graph.version>
-		<minio.version>8.6.0</minio.version>
 		<nekohtml.version>3.0.4</nekohtml.version>
 		<oauth2.oidc.sdk.version>11.38.2</oauth2.oidc.sdk.version>
 		<okhttp.version>5.5.0</okhttp.version>
