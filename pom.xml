@@ -120,7 +120,7 @@
 		<playwright.version>1.62.0</playwright.version>
 		<poi.version>5.5.1</poi.version>
 		<s3.version>2.54.2</s3.version>
-		<sai.version>0.3.0</sai.version>
+		<sai.version>0.4.0-SNAPSHOT</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<spnego.version>1.2.2</spnego.version>
 		<tika.version>3.3.2</tika.version>
