@@ -91,7 +91,12 @@
 		<httpcomponents.version>4.5.14</httpcomponents.version>
 		<httpclient5.version>5.6.1</httpclient5.version>
 		<icu4j.version>78.3</icu4j.version>
-		<jackson.version>2.22.1</jackson.version>
+		<!-- Jackson 3 (groupId tools.jackson.*) is used by Fess' own code. -->
+		<jackson.version>3.2.1</jackson.version>
+		<!-- Jackson 2 (groupId com.fasterxml.jackson.*) still ships because OpenSearch and
+		     the Azure/Graph SDK depend on it; keep it aligned with ${opensearch.version}. -->
+		<jackson2.version>2.22.1</jackson2.version>
+		<!-- Shared by both lines: Jackson 3.2.1 itself resolves annotations to 2.22. -->
 		<jackson.annotations.version>2.22</jackson.annotations.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
 		<java.saml.version>3.1.2</java.saml.version>
