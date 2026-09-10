@@ -435,6 +435,17 @@
 			<name>CodeLibs Repository</name>
 			<url>https://maven.codelibs.org/release/</url>
 		</repository>
+		<!--
+		     updatePolicy always, because these repositories are how one repository in this
+		     family sees another's change. Maven's default for a snapshot is daily: a build whose
+		     ~/.m2 already resolved a -SNAPSHOT earlier the same day never asks again, so a CI job
+		     that caches the local repository cannot see a sibling repository's snapshot published
+		     minutes ago. That is not hypothetical. A Fess pull request depending on a fess-crawler
+		     change merged 10 minutes earlier failed with NoClassDefFoundError while the fixed jar
+		     sat published, and the job log showed no request to this host at all.
+		     Every consumer inherits this, including the plugin repositories, whose CI installs this
+		     pom from source and then resolves org.codelibs.fess:fess from here. The cost is one
+		     metadata request per snapshot dependency per build, and offline mode skips it. -->
 		<repository>
 			<id>codelibs.org.snapshot</id>
 			<name>CodeLibs Snapshot Repository</name>
@@ -444,6 +455,7 @@
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</repository>
 		<repository>
@@ -455,6 +467,7 @@
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</repository>
 	</repositories>
