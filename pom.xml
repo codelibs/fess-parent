@@ -111,7 +111,7 @@
 		<jakarta.servlet.api.version>6.1.0</jakarta.servlet.api.version>
 		<jakarta.transaction.api.version>2.0.1</jakarta.transaction.api.version>
 		<jbig2.imageio.version>3.0.5</jbig2.imageio.version>
-		<jcifs.version>3.0.3</jcifs.version>
+		<jcifs.version>3.0.4-SNAPSHOT</jcifs.version>
 		<jersey.common.version>3.1.12</jersey.common.version>
 		<jhighlight.version>2.0.0</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
