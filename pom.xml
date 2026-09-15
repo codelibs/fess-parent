@@ -48,7 +48,6 @@
 
 		<!-- Crawler -->
 		<crawler.version>15.9.0-SNAPSHOT</crawler.version>
-		<crawler.playwright.version>15.9.0-SNAPSHOT</crawler.playwright.version>
 
 		<!-- Suggest -->
 		<suggest.version>15.9.0-SNAPSHOT</suggest.version>
@@ -99,8 +98,9 @@
 		<icu4j.version>78.3</icu4j.version>
 		<!-- Jackson 3 (groupId tools.jackson.*) is used by Fess' own code. -->
 		<jackson.version>3.2.1</jackson.version>
-		<!-- Jackson 2 (groupId com.fasterxml.jackson.*) still ships because OpenSearch and
-		     the Azure/Graph SDK depend on it; keep it aligned with ${opensearch.version}. -->
+		<!-- Jackson 2 (groupId com.fasterxml.jackson.*) still ships in the Fess war for the plugins
+		     that compile against it, such as the Microsoft 365 (Graph SDK), Box and SharePoint data
+		     stores, and for log4j-core's YAML configuration support. -->
 		<jackson2.version>2.22.1</jackson2.version>
 		<!-- Shared by both lines: Jackson 3.2.1 itself resolves annotations to 2.22. -->
 		<jackson.annotations.version>2.22</jackson.annotations.version>
@@ -112,7 +112,6 @@
 		<jakarta.transaction.api.version>2.0.1</jakarta.transaction.api.version>
 		<jbig2.imageio.version>3.0.5</jbig2.imageio.version>
 		<jcifs.version>3.0.4-SNAPSHOT</jcifs.version>
-		<jersey.common.version>3.1.12</jersey.common.version>
 		<jhighlight.version>2.0.0</jhighlight.version>
 		<jlha.version>0.06-05</jlha.version>
 		<jodconverter.version>4.4.11</jodconverter.version>
