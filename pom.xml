@@ -64,11 +64,7 @@
 		<tomcat.boot.version>3.0.0</tomcat.boot.version>
 
 		<!-- Partner Library -->
-		<msal4j.version>1.26.0</msal4j.version>
 		<asm.version>9.10.1</asm.version>
-		<azure.core.version>1.59.1</azure.core.version>
-		<azure.identity.version>1.18.6</azure.identity.version>
-		<azure.core.http.netty.version>1.16.7</azure.core.http.netty.version>
 		<bouncycastle.version>1.85.2</bouncycastle.version>
 		<commonmark.version>0.30.0</commonmark.version>
 		<commons.codec.version>1.22.1</commons.codec.version>
@@ -104,7 +100,6 @@
 		<!-- Shared by both lines: Jackson 3.2.1 itself resolves annotations to 2.22. -->
 		<jackson.annotations.version>2.22</jackson.annotations.version>
 		<jai.imageio.version>1.4.0</jai.imageio.version>
-		<java.saml.version>3.1.2</java.saml.version>
 		<jakarta.annotation.api.version>3.0.0</jakarta.annotation.api.version>
 		<jakarta.mail.version>2.0.5</jakarta.mail.version>
 		<jakarta.servlet.api.version>6.1.0</jakarta.servlet.api.version>
@@ -121,9 +116,7 @@
 		<log4j.version>2.25.5</log4j.version>
 		<log4j.ecs.version>1.8.0</log4j.ecs.version>
 		<lucene.version>10.5.1</lucene.version>
-		<microsoft.graph.version>6.70.0</microsoft.graph.version>
 		<nekohtml.version>3.0.4</nekohtml.version>
-		<oauth2.oidc.sdk.version>11.38.2</oauth2.oidc.sdk.version>
 		<okhttp.version>5.5.0</okhttp.version>
 		<pdfbox.version>3.0.8</pdfbox.version>
 		<playwright.version>1.63.0</playwright.version>
@@ -131,7 +124,6 @@
 		<s3.version>2.55.7</s3.version>
 		<sai.version>0.4.0-SNAPSHOT</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
-		<spnego.version>1.2.2</spnego.version>
 		<tika.version>3.3.2</tika.version>
 
 		<!-- Testing -->
