@@ -53,7 +53,7 @@
 		<suggest.version>15.9.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>3.9.0-SNAPSHOT</fesen.httpclient.version>
+		<fesen.httpclient.version>3.9.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
 		<opensearch.version>3.9.0</opensearch.version>
@@ -122,7 +122,7 @@
 		<playwright.version>1.63.0</playwright.version>
 		<poi.version>5.5.1</poi.version>
 		<s3.version>2.55.7</s3.version>
-		<sai.version>0.4.0-SNAPSHOT</sai.version>
+		<sai.version>0.4.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<tika.version>3.3.2</tika.version>
 
