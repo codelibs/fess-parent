@@ -89,7 +89,7 @@
 		<handlebars.version>4.5.5</handlebars.version>
 		<httpcomponents.core.version>4.4.16</httpcomponents.core.version>
 		<httpcomponents.version>4.5.14</httpcomponents.version>
-		<httpclient5.version>5.6.1</httpclient5.version>
+		<httpclient5.version>5.6.5</httpclient5.version>
 		<icu4j.version>78.3</icu4j.version>
 		<!-- Jackson 3 (groupId tools.jackson.*) is used by Fess' own code. -->
 		<jackson.version>3.2.3</jackson.version>
