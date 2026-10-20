@@ -65,7 +65,7 @@
 
 		<!-- Partner Library -->
 		<asm.version>9.10.1</asm.version>
-		<bouncycastle.version>1.85.2</bouncycastle.version>
+		<bouncycastle.version>1.86</bouncycastle.version>
 		<commonmark.version>0.30.0</commonmark.version>
 		<commons.codec.version>1.22.1</commons.codec.version>
 		<commons.fileupload.version>2.0.0-M5</commons.fileupload.version>
@@ -124,7 +124,7 @@
 		<s3.version>2.55.7</s3.version>
 		<sai.version>0.4.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
-		<tika.version>3.3.2</tika.version>
+		<tika.version>4.1.0</tika.version>
 
 		<!-- Testing -->
 		<utflute.version>2.5.0</utflute.version>
