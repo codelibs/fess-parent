@@ -125,6 +125,7 @@
 		<sai.version>0.4.0</sai.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<tika.version>4.2.0</tika.version>
+		<webauthn4j.version>0.32.0.RELEASE</webauthn4j.version>
 
 		<!-- Testing -->
 		<utflute.version>2.5.0</utflute.version>
