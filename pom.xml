@@ -53,11 +53,11 @@
 		<suggest.version>15.10.0-SNAPSHOT</suggest.version>
 
 		<!-- Fesen -->
-		<fesen.httpclient.version>3.9.0</fesen.httpclient.version>
+		<fesen.httpclient.version>3.10.0</fesen.httpclient.version>
 
 		<!-- OpenSearch -->
-		<opensearch.version>3.9.0</opensearch.version>
-		<opensearch.runner.version>3.9.0.0</opensearch.runner.version>
+		<opensearch.version>3.10.0</opensearch.version>
+		<opensearch.runner.version>3.10.0.0</opensearch.runner.version>
 
 		<!-- Tomcat -->
 		<tomcat.version>11.0.27</tomcat.version>
@@ -92,7 +92,7 @@
 		<httpclient5.version>5.6.5</httpclient5.version>
 		<icu4j.version>78.3</icu4j.version>
 		<!-- Jackson 3 (groupId tools.jackson.*) is used by Fess' own code. -->
-		<jackson.version>3.2.3</jackson.version>
+		<jackson.version>3.2.4</jackson.version>
 		<!-- Jackson 2 (groupId com.fasterxml.jackson.*) still ships in the Fess war for the plugins
 		     that compile against it, such as the Microsoft 365 (Graph SDK), Box and SharePoint data
 		     stores, and for log4j-core's YAML configuration support. -->
@@ -115,7 +115,7 @@
 		<kryo.version>5.7.1</kryo.version>
 		<log4j.version>2.25.5</log4j.version>
 		<log4j.ecs.version>1.8.0</log4j.ecs.version>
-		<lucene.version>10.5.1</lucene.version>
+		<lucene.version>10.6.0</lucene.version>
 		<nekohtml.version>3.0.4</nekohtml.version>
 		<okhttp.version>5.5.1</okhttp.version>
 		<pdfbox.version>3.0.8</pdfbox.version>
